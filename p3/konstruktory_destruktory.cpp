@@ -1,9 +1,9 @@
 /* p3-init.cpp */
 
 /*
-Tento priklad demonstruje ... . Vsechny metody objektu jsou implementovany
-primo v jejich definici, coz je obecne spatny napad, ale pro jednoduchy priklad
-je to jedno. 
+Tento priklad demonstruje volani konstruktoru a destruktoru. Vsechny metody objektu
+jsou implementovany primo v jejich definici, coz je obecne spatny napad, ale pro
+jednoduchy priklad je to jedno. 
 */
 
 #include <cstdlib>
