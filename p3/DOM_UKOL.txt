@@ -1,0 +1,13 @@
+Nejdrive si pripravte priklady na 4. cviceni!
+(sablona uz je v adresari p4)
+
+Zopakujte si ukazatele:
+1) Projdete si priklady v /extras/ukazatele
+2) Napiste svuj jednoduchy demonstrativni program, ktery pouzije:
+	- promennou A
+	- ukazatel B na hodnotu A
+	- ukazatel C na ukazatel B na hodnotu A
+	- konstantni ukazatel D na hodnotu A
+	- ukazatel E na konstantni hodnotu A
+	- konstantni ukazatel F na konstantni hodnotu A
+3) Ukazte cvicicimu na 4. cviceni
