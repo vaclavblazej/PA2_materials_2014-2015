@@ -1,0 +1,9 @@
+Pripravte se na cviceni 5
+https://edux.fit.cvut.cz/courses/BI-PA2/_media/tutorials/05/pa2-c5.pdf
+
+Kouknete na video jak se dela makefile:
+https://edux.fit.cvut.cz/courses/BI-PA2/video
+
+Prohlednete si priklady na makefile ve slozce ../extras/makefile
+
+Kouknete se na zadani Vasi semestralni prace, rozmyslete jak to udelate
