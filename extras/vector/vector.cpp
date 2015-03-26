@@ -27,7 +27,21 @@ int main()
 	it = nums.begin();
 	nums.erase(it);
 	cout << "size: (" << nums.size() << "): ";
-	cout << (lower_bound(nums.begin(), nums.end(), 10, compare) - nums.begin()) << endl;
+	int findElem = 4;
+	vector<int>::iterator iter = lower_bound(nums.begin(), nums.end(), findElem, compare);
+	if(iter != nums.end() && *iter == findElem){
+		cout << "found element "
+			 << findElem
+			 << " at position "
+			 << (iter - nums.begin())
+			 << endl;
+	}else{
+		cout << "did NOT find element "
+			 << findElem
+			 << ", closest 'bigger' element is on position"
+			 << (iter - nums.begin())
+			 << endl;
+	}
 	for(int x : nums){
 		cout << x << " ";
 	}
