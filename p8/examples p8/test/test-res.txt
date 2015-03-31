@@ -1,0 +1,28 @@
+stat. vazba:   dyn. vazba: 
+//virtual      virtual
+
+sizeof(T ): 1  sizeof(T ): 4
+sizeof(T ): 1  sizeof(T1): 4
+sizeof(T ): 1  sizeof(T2): 4
+sizeof(T ): 1  sizeof(T3): 4
+   .           .
+T::P           T::P           x.P;
+T::P           T::P           x1.P;
+T2::P          T2::P          x2.P;
+T2::P          T2::P          x3.p;
+   =
+T::P           T::P           x=x1; x.P();
+T::P           T::P           x=x2; x.P();
+T::P           T::P           x=x3; x.P();
+   ->          ->
+T::P           T::P           p->P();
+T::P           T::P           p1->P();
+T2::P          T2::P          p2->P();
+T2::P          T2::P          p3->P();
+   =           =
+T::P           T::P           p=p1; p->P();
+T::P           T2::P          p=p2; p->P();
+T::P           T2::P          p=p3; p->P();
+
+
+
