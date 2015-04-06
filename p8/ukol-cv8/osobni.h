@@ -1,3 +1,6 @@
+#ifndef __OSOBNI_H__
+#define __OSOBNI_H__
+
 #include <iostream>
 using namespace std;
 #include "auto.h"
@@ -5,13 +8,19 @@ using namespace std;
 class Osobni : public Auto{
 public:
 	Osobni(string SPZ, int rok, int osob):Auto(SPZ, rok),osob(osob){}
-	int getetPrivateRok(){
-	 return rok;
+	virtual ~Osobni(){}
+	void prints(ostream & os){
+		os << *this;
 	}
-	virtual void accelerate(){
-		cout << "HELLO KITTY!!!" << endl;
+	virtual void printv(ostream & os){
+		os << *this;
+	}
+	friend ostream & operator<< (ostream &os, const Osobni & a){
+		os << "Osob: " << a.SPZ << ' ' << a.rok << ' ' << a.osob;
+		return os;
 	}
 private:
 	int osob;
 };
 
+#endif /* __OSOBNI_H__ */
